@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Új állat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form method="post">
+    <div>
+      <label>
+        Név: <br>
+        <input type="text" name="nev">
+      </label>
+    </div>
+    <div>
+      <label>
+        Életkor: <br>
+        <input type="number" name="eletkor" >
+      </label>
+    </div>
+    <div>
+      <label>
+        Fajta: <br>
+        <input type="radio" id="elefant" name="fajta" value="elefant">
+        <label for="elefant">Elefánt</label><br>
+        <input type="radio" id="ebihal" name="fajta" value="ebihal">
+        <label for="ebihal">Ebihal</label><br>
+        <input type="radio" id="cica" name="fajta" value="cica">
+        <label for="cica">Cica</label>
+      </label>
+    </div>
+    <div>
+      <input type="submit" value="Új állat">
+    </div>
+  </form>
+  <p id="hibaUzenet"><%= messages %></p>
+</body>
+</html>
